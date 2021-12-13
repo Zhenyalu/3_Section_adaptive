@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    .test{
+      width: 40px;
+      height: 40px;
+      background-color: #000;
+      border-bottom: 4px solid green;
+
+     /* animation: 3s test infinite;
+      animation-name: move;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      animation-iteration-count: linear;*/
+    }
+    div:hover{
+      animation-play-state: paused;
+    }
+
+    @keyframes move{
+      0%{
+        transform: translate(0,0) rotate(0deg);
+      }
+      0%{
+        transform: translate(0,0) rotate(0deg);
+      }
+      200%{
+        transform: translate(00px,0) rotate(0deg);
+        opacity: 1;
+      }
+      40%{
+        transform: translate(400px,200px) rotate(0deg);
+        opacity: 0.5;
+      }
+      45%{
+        transform: translate(0px,200px) rotate(45deg);
+        opacity: 1;
+        background-color: aqua;
+      }
+      60%{
+        transform: translate(0px,200px) rotate(45deg);
+      }
+        100%{
+        transform: translate(0px,0);
+        background-color: black;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="test animate__animated animate__heartBeat"></div>
+</body>
+</html>
